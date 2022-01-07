@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "gitpage":"vue-tsc --noEmit && vite build --mode gitpage",
     "serve": "vite preview"
   },
   "dependencies": {
