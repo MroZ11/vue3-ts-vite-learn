@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+      (function () {
+          var ua = navigator.userAgent.toLocaleLowerCase();
+          var browserType = "", browserVersion = "";
+          if (ua.match(/msie/) != null || ua.match(/trident/) != null) {
+              alert('不支持当前浏览器，请前往谷歌、360等其他浏览器打开');
+              // browserType = "IE";
+	            // 获取ie浏览器版本
+              // browserVersion = ua.match(/msie ([\d.]+)/) != null ? ua.match(/msie ([\d.]+)/)[1] : ua.match(/rv:([\d.]+)/)[1];
+              // console.log(browserVersion)
+              // if ((1 * browserVersion) < 9) {
+              //     alert("请在ie11版本浏览器上使用系统")
+              // }
+          }
+      })();
+  </script>
+  </body>
+</html>
