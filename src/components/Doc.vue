@@ -2,9 +2,8 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { useRoute } from "vue-router";
-import { getResposity } from '../request/api/resposity';
-import { Resposity } from '../request/api/resposity';
-import { Ref, ref, watch,defineProps,withDefaults } from 'vue'
+import { type Resposity,getResposity} from '@/request/api/resposity';
+import { Ref, ref, watch } from 'vue'
 
 const route = useRoute()
 

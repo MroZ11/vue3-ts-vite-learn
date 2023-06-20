@@ -15,7 +15,6 @@ const colorDays: ColorDat[] = [
     { date: `${nowYear}-${nowMonth}-18`, notes: '《篮球公园》' },
     { date: `${nowYear}-${nowMonth}-25`, notes: '《体坛画报》' }
 ]
-console.log(colorDays)
 
 </script>
 

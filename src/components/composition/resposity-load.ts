@@ -1,12 +1,12 @@
 
-import { ref,Ref, onMounted, watch } from 'vue'
-import { getResposity,Resposity } from '../../request/api/resposity';
+import { ref, type Ref, onMounted, watch } from 'vue'
+//import type 用法 https://zhuanlan.zhihu.com/p/384172236
+import { getResposity, type Resposity } from '@/request/api/resposity';
 
-
-export default function resposityLoad(query:Ref<String>) {
-  const repositories:Ref<Resposity[]> = ref([])
+export default function resposityLoad(query: Ref<String>) {
+  const repositories: Ref<Resposity[]> = ref([])
   const getUserRepositories = async () => {
-    repositories.value = await getResposity({key:query.value})
+    repositories.value = await getResposity({ key: query.value })
   }
   onMounted(getUserRepositories)
   watch(query, getUserRepositories)
